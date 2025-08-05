@@ -1,0 +1,168 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mustang GT Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    #header {
+      margin-top: 80px;
+    }
+
+    #nav-bar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      padding: 15px 0;
+      border-bottom: 1px solid #ccc;
+      z-index: 1000;
+    }
+
+    .nav-link {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .nav-link:hover {
+      color: #e60000;
+    }
+
+    #header-img {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      padding-top: 10px;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    #video {
+      max-width: 100%;
+    }
+
+    #form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    #email {
+      padding: 10px;
+      width: 300px;
+      max-width: 90%;
+    }
+
+    #submit {
+      padding: 10px 20px;
+      background-color: #e60000;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+    }
+
+    #submit:hover {
+      background-color: #c20000;
+    }
+
+    @media (max-width: 600px) {
+      #nav-bar {
+        flex-direction: column;
+      }
+
+      iframe {
+        width: 100%;
+        height: auto;
+      }
+
+      #email {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <img id="header-img" src="https://images.pexels.com/photos/30834886/pexels-photo-30834886.jpeg" alt="Mustang GT Logo">
+
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#pricing" class="nav-link">Pricing</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <section id="features">
+    <h2>Features</h2>
+    <p>The Mustang GT offers unmatched performance, aggressive styling, and a legacy of power.</p>
+  </section>
+
+  <section id="pricing">
+    <h2>Pricing</h2>
+    <p>Starting at $42,000 — with custom packages available.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Call us at 1-800-MUSTANG or visit your nearest Ford dealer.</p>
+  </section>
+
+  <section id="product-video">
+    <h2>Watch the Product in Action</h2>
+    <iframe 
+      id="video"
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/oHg5SJYRHA0" 
+      title="Mustang GT Video"
+      frameborder="0" 
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <section id="signup">
+    <h2>Sign up for updates</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email" 
+        required>
+      <input 
+        type="submit" 
+        id="submit" 
+        value="Get Started">
+    </form>
+  </section>
+
+</body>
+</html>
+
+
+
+
+
